@@ -1,0 +1,37 @@
+{
+  "id": "com.enclave.openmemory",
+  "name": "OpenMemory",
+  "version": "1.0.0",
+  "description": "Advanced cognitive memory system with semantic search, graph associations, memory decay, and temporal tracking. Requires OpenMemory service (local or cloud).",
+  "author": "Enclave",
+  "type": "tool",
+  "entry": "index.cjs",
+  "sandboxVersion": 1,
+  "permissions": ["tools:register", "services:register", "ui:views:register", "storage:read", "storage:write"],
+  "ui": {
+    "entry": "ui/dist/index.js",
+    "components": {
+      "OpenMemoryView": "named"
+    }
+  },
+  "config": {
+    "baseURL": {
+      "type": "string",
+      "default": "http://localhost:8080",
+      "description": "OpenMemory service URL (e.g., http://localhost:3000 or https://your-openmemory-instance.com)"
+    },
+    "userId": {
+      "type": "string",
+      "default": "default-user",
+      "description": "User ID for multi-tenant memory isolation"
+    }
+  },
+  "capabilities": ["memory-backend"],
+  "provides": {
+    "memory-backend": {
+      "version": "1.0",
+      "operations": ["store", "retrieve", "search", "list", "delete", "health"],
+      "features": ["metadata", "tags", "semantic-search", "embeddings", "decay", "sectoring", "temporal-facts"]
+    }
+  }
+}
