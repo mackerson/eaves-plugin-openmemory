@@ -1,0 +1,26 @@
+# Copy into each plugin repo as .github/workflows/release.yml.
+# Triggers on a version tag, builds + packs the plugin, and publishes a GitHub
+# release with the checksummed bundle. Free on public repos (unlimited minutes).
+# Flow: bump plugin.json version -> `git tag vX.Y.Z && git push --tags` -> release.
+name: release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write   # create the release + upload the asset
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: node scripts/release.mjs --publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
