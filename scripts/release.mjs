@@ -36,6 +36,7 @@ if (existsSync('vite.config.ts') || existsSync('vite.config.js')) run('yarn buil
 
 // 2. Assemble the runtime bundle file list
 const files = ['plugin.json', manifest.entry || 'index.cjs'];
+if (existsSync('lib')) files.push('lib'); // backend modules the entry require()s
 if (existsSync('ui/dist')) files.push('ui/dist');
 for (const f of files) {
   if (!existsSync(f)) { console.error(`ERROR: missing bundle file: ${f}`); process.exit(1); }
