@@ -7,7 +7,12 @@
   "type": "tool",
   "entry": "index.cjs",
   "sandboxVersion": 1,
-  "permissions": ["tools:register", "services:register", "ui:views:register", "storage:read", "storage:write"],
+  "permissions": [
+    "tools:register",
+    "services:register",
+    "ui:views:register",
+    "network:http"
+  ],
   "ui": {
     "entry": "ui/dist/index.js",
     "components": {
@@ -26,12 +31,29 @@
       "description": "User ID for multi-tenant memory isolation"
     }
   },
-  "capabilities": ["memory-backend"],
+  "capabilities": [
+    "memory-backend"
+  ],
   "provides": {
     "memory-backend": {
       "version": "1.0",
-      "operations": ["store", "retrieve", "search", "list", "delete", "health"],
-      "features": ["metadata", "tags", "semantic-search", "embeddings", "decay", "sectoring", "temporal-facts"]
+      "operations": [
+        "store",
+        "retrieve",
+        "search",
+        "list",
+        "delete",
+        "health"
+      ],
+      "features": [
+        "metadata",
+        "tags",
+        "semantic-search",
+        "embeddings",
+        "decay",
+        "sectoring",
+        "temporal-facts"
+      ]
     }
   }
 }
