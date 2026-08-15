@@ -1,5 +1,5 @@
 {
-  "name": "@enclave-plugin/openmemory-ui",
+  "name": "@eaves-plugin/openmemory-ui",
   "version": "1.0.0",
   "description": "UI bundle for OpenMemory plugin",
   "private": true,

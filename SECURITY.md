@@ -15,11 +15,11 @@ disclosure.
 
 ## Scope
 
-This is an Enclave plugin. It runs sandboxed in a Worker thread with
+This is an Eaves plugin. It runs sandboxed in a Worker thread with
 permission-gated host access, so the most valuable reports show a way to exceed
 the plugin's declared permissions, exfiltrate user data, or break sandbox
-containment. Vulnerabilities in the Enclave host itself belong in the main
-Enclave repository.
+containment. Vulnerabilities in the Eaves host itself belong in the main
+Eaves repository.
 
 ## Supported versions
 

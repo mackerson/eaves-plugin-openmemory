@@ -1,9 +1,9 @@
 {
-  "id": "com.enclave.openmemory",
+  "id": "com.eaves.openmemory",
   "name": "OpenMemory",
   "version": "1.0.0",
   "description": "Advanced cognitive memory system with semantic search, graph associations, memory decay, and temporal tracking. Requires OpenMemory service (local or cloud).",
-  "author": "Enclave",
+  "author": "Eaves",
   "type": "tool",
   "entry": "index.cjs",
   "sandboxVersion": 1,

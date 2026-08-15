@@ -1,5 +1,5 @@
 /**
- * OpenMemory Plugin for Enclave
+ * OpenMemory Plugin for Eaves
  * Provides advanced cognitive memory with semantic search, associations,
  * memory decay, and temporal knowledge tracking
  *
@@ -75,7 +75,7 @@ module.exports = {
           metadata: {
             ...metadata,
             key, // Store the key in metadata for retrieval
-            source: 'enclave',
+            source: 'eaves',
             timestamp: Date.now(),
             importance: metadata.importance || 0.5
           }
@@ -441,7 +441,7 @@ module.exports = {
           validTo: validTo || null,
           confidence,
           metadata: {
-            source: 'enclave',
+            source: 'eaves',
             timestamp: Date.now()
           }
         };

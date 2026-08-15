@@ -706,7 +706,7 @@ export function OpenMemoryView({ context }) {
                 <div className="bg-muted p-4 rounded-lg">
                   <div className="text-muted-foreground">
                     Deploy OpenMemory to a cloud provider and configure the Base URL in the plugin configuration.
-                    Edit <code className="px-2 py-1 bg-background rounded text-xs">.enclave/plugins.json</code> to set a custom baseURL.
+                    Edit <code className="px-2 py-1 bg-background rounded text-xs">.eaves/plugins.json</code> to set a custom baseURL.
                   </div>
                 </div>
               </div>
@@ -719,13 +719,13 @@ export function OpenMemoryView({ context }) {
             <div className="space-y-3 text-sm text-muted-foreground">
               <p>To change the OpenMemory connection settings:</p>
               <ol className="list-decimal list-inside space-y-2 ml-2">
-                <li>Open <code className="px-2 py-1 bg-muted rounded text-xs">.enclave/plugins.json</code> in your project</li>
+                <li>Open <code className="px-2 py-1 bg-muted rounded text-xs">.eaves/plugins.json</code> in your project</li>
                 <li>Find the OpenMemory plugin configuration</li>
                 <li>
                   Update the settings:
                   <pre className="bg-muted p-3 rounded text-xs font-mono mt-2 overflow-x-auto">
 {`{
-  "com.enclave.openmemory": {
+  "com.eaves.openmemory": {
     "enabled": true,
     "config": {
       "baseURL": "http://localhost:8080",
@@ -735,7 +735,7 @@ export function OpenMemoryView({ context }) {
 }`}
                   </pre>
                 </li>
-                <li>Restart Enclave for changes to take effect</li>
+                <li>Restart Eaves for changes to take effect</li>
               </ol>
             </div>
           </div>

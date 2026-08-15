@@ -23,8 +23,8 @@ const tag = `v${version}`;
 const asset = `${shortName}-${version}.tgz`;
 
 // Resolve the repo slug from the git remote (handles ssh host aliases like
-// git@github-personal:mackerson/enclave-plugin-foo.git).
-let repoSlug = `mackerson/enclave-plugin-${shortName}`;
+// git@github-personal:mackerson/eaves-plugin-foo.git).
+let repoSlug = `mackerson/eaves-plugin-${shortName}`;
 try {
   const remote = capture('git config --get remote.origin.url');
   const m = remote.match(/[:/](mackerson\/[^/]+?)(?:\.git)?$/);

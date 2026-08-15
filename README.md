@@ -1,6 +1,6 @@
 # OpenMemory Plugin
 
-Advanced cognitive memory system for Enclave agents with semantic search, graph associations, memory decay, and temporal knowledge tracking.
+Advanced cognitive memory system for Eaves agents with semantic search, graph associations, memory decay, and temporal knowledge tracking.
 
 This plugin wraps the [OpenMemory](https://github.com/CaviraOSS/OpenMemory) service, providing agents with sophisticated memory capabilities that go far beyond simple key-value storage.
 
@@ -51,7 +51,7 @@ See [OpenMemory deployment docs](https://github.com/CaviraOSS/OpenMemory#deploym
 
 ## Configuration
 
-Configure the plugin in Enclave's plugin settings or via `plugin.json`:
+Configure the plugin in Eaves's plugin settings or via `plugin.json`:
 
 ```json
 {

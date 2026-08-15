@@ -7,7 +7,7 @@ export function OpenMemoryViewComponent() {
     tools: {
       execute: async (toolName: string, args: any) => {
         // Call the plugin tool via electron IPC
-        return await (window as any).electron.executePluginTool('com.enclave.openmemory', toolName, args);
+        return await (window as any).electron.executePluginTool('com.eaves.openmemory', toolName, args);
       }
     }
   };
