@@ -1,6 +1,6 @@
 {
   "name": "@eaves-plugin/openmemory-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UI bundle for OpenMemory plugin",
   "private": true,
   "type": "module",

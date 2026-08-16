@@ -1,7 +1,7 @@
 {
   "id": "com.eaves.openmemory",
   "name": "OpenMemory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced cognitive memory system with semantic search, graph associations, memory decay, and temporal tracking. Requires OpenMemory service (local or cloud).",
   "author": "Eaves",
   "type": "tool",
